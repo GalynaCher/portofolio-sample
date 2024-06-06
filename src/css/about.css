@@ -1,0 +1,163 @@
+.about-me-photo {
+  margin-bottom: 40px;
+}
+
+.title-about {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.me {
+  color: #00b068;
+}
+
+.about-image {
+  border-radius: 16px;
+}
+
+.classic-title {
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.text-style {
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.edu-role-mod::before {
+  content: '';
+  display: block;
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+  background: #00b068;
+  transform: rotate(-180deg);
+  line-height: 24px;
+  margin: 10px;
+  flex: 0 0 auto;
+}
+
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.education,
+.role {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.education-list,
+.role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.text-style {
+  display: flex;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-wrapper {
+    background-image: url('../img/about-decor@1.png');
+    background-repeat: no-repeat;
+    background-position: bottom 160px right 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bg-wrapper {
+      background-image: url('../img/about-decor@2.png');
+      background-size: 50%;
+    }
+  }
+
+  .title-about {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+
+  .about-wrapper {
+    gap: 32px;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 60px;
+  }
+
+  .about-image,
+  .bio-wrapper {
+    flex-basis: calc((100% - 32px) / 2);
+    flex-shrink: 1;
+  }
+
+  .bio-wrapper {
+    margin: 0;
+    padding-bottom: 85px;
+  }
+
+  .content-wrap {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .education,
+  .role {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .bg-wrapper {
+    background-position: bottom 270px right 0;
+  }
+
+  .about-wrapper {
+    gap: 136px;
+    margin-bottom: 80px;
+  }
+
+  .about-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .bio-wrapper {
+    max-width: 488px;
+    padding-bottom: 232px;
+  }
+
+  .content-wrap {
+    gap: 136px;
+    max-width: 904px;
+    margin-left: 210px;
+  }
+}
