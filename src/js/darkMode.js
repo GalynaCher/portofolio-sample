@@ -1,3 +1,4 @@
+// switch to light / dark mode
 const btns = document.querySelectorAll('.darkmode > button');
 const isDark = window.localStorage.getItem('darkmode');
 
